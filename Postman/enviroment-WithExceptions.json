@@ -1,0 +1,16 @@
+{
+  "id": "b33f29ef-ea7e-19e5-1e36-4d3ea88d8ea3",
+  "name": "Mpc.ExceptionsExample.WithExceptions",
+  "values": [
+    {
+      "enabled": true,
+      "key": "server",
+      "value": "http://localhost:53399",
+      "type": "text"
+    }
+  ],
+  "timestamp": 1504303561570,
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2017-09-01T22:27:28.545Z",
+  "_postman_exported_using": "Postman/5.2.0"
+}

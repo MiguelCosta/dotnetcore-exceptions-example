@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Mpc.ExceptionsExample",
+		"_postman_id": "57a42d8d-2ecc-d0cb-bc61-c6274604d66a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Success",
+			"request": {
+				"url": "{{server}}/api/values",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,16,18,19,20]\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Fail",
+			"request": {
+				"url": "{{server}}/api/values",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[]\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
