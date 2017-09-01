@@ -20,7 +20,7 @@
             var serviceResult = _valuesService.ProcessValues(values);
             if (!serviceResult.Success)
             {
-                return StatusCode(500, serviceResult.Messages);
+                return BadRequest(serviceResult.Messages);
             }
 
             return Ok(serviceResult.Result);

@@ -23,9 +23,9 @@
                 var serviceResult = _valuesService.ProcessValues(values);
                 return Ok(serviceResult);
             }
-            catch (Exception ex)
+            catch (ArgumentException ex)
             {
-                return StatusCode(500, ex.Message);
+                return BadRequest(ex.Message);
             }
         }
     }
