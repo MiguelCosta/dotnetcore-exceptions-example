@@ -1,9 +1,9 @@
 # Exceptions Example
 
-Projeto com trÍs APIs:
+Solution com tr√©s APIs:
 
-1. Utiliza Exceptions (`Mpc.ExceptionsExample.WithExceptions.Api`)
-2. N„o utilizado Exceptions (`Mpc.ExceptionsExample.NoExceptions.Api`)
+1. Lan√ßa Exceptions (`Mpc.ExceptionsExample.WithExceptions.Api`)
+2. N√£o lan√ßa Exceptions (`Mpc.ExceptionsExample.NoExceptions.Api`)
 3. Em DotNetCore 1.1 (`Mpc.ExceptionsExample.NoExceptions.Core11.Api`)
 
 Cada api tem apenas o endpoint:
@@ -22,10 +22,10 @@ Content-Type: application/json
 [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,16,18,19,20]
 ```
 
-A grande diferenÁa entre as API È que no caso de a lista ser vazia.
+A grande diferen√ßa entre as API √© o caso de a lista ser vazia.
 
-Na API `WithExceptions` È devolvido um BadRequest atravÈs do lanÁamento de um `Exception` no 
-serviÁo respons·vel por fazer o c·lculo.
+Na API `WithExceptions` √© devolvido um BadRequest atrav√©s do lan√ßamento de uma `Exception` no 
+servi√ßo respons√°vel por fazer o c√°lculo.
 
 Exemplo da API `WithExceptions`:
 
@@ -44,7 +44,7 @@ public IActionResult Post([FromBody] IEnumerable<int> values)
 }
 ```
 
-Enquanto que na API `NoExceptions` È feita a verificaÁ„o se o array tem ou n„o elemendos.
+Enquanto que na API `NoExceptions` √© feita a verifica√ß√£o se o array tem ou n√£o elementos.
 
 Exemplo da API `NoExceptions`:
 
@@ -65,27 +65,27 @@ public IActionResult Post([FromBody] IEnumerable<int> values)
 
 ### NoExceptions vs Exceptions
 
-O objetivo È fazer pedidos ‡s API com a lista vazia, ou seja, a resposta tem de ser `BadRequest`.
+O objetivo √© fazer pedidos √†s APIs com a lista vazia, ou seja, √© `BadRequest`.
 
 Utilizando a ferramente [vegeta](https://github.com/tsenart/vegeta), fizemos pedidos durante 30seg com rate=100.
 
 ![img](compare-results-exceptions.png)
 
-AtravÈs dos resultados obtidos, podemos dizer que a API que lanÁa `Exceptions` demora em mÈdia mais tempo a responder.
+Atrav√©s dos resultados √≥btidos, podemos dizer que a API que lan√ßa `Exceptions` demora em m√©dia mais tempo a responder.
 
 
 ### .Net Core 2.0 vs .Net Core 1.1
 
-O objetivo È comparar duas APIs que fazem exatamente o mesmo mas est„o em versıes .Net Core diferentes.
+O objetivo √© comparar duas APIs que fazem exatamente o mesmo mas est√£o em vers√µes .Net Core diferentes.
 
-O pedido consiste em enviar uma array de inteiros ([ficheiro input](vegeta/input.json)) e a resposta È a soma dessa lista.
+O pedido consiste em enviar uma array de inteiros ([ficheiro input](vegeta/input.json)) e a resposta √© a soma dos elementos do array.
 
 ![img](compare-results-versions-dotnetcore.png)
 
-AtravÈs dos resultado sobtidos, podemos dizer que surpreendemente a API em .Net Core 1.1 tem 
-um tempo de resposta mÈdio (2.893328ms) inferior ‡ API em .Net Core 2.0 (4.225719ms).
+Atrav√©s dos resultado obtidos, podemos dizer que surpreendemente a API em .Net Core 1.1 tem 
+um tempo de resposta m√©dio (2.893328ms) inferior √† API em .Net Core 2.0 (4.225719ms).
 
 ## Folders
 
 - `Postman`: ficheiros para importar no Postman de forma a simular os pedidos
-- `vegeta`: permitir simular v·rios request em simult‚neo. Utilizar os ficheiros `.bat`.
+- `vegeta`: permitir simular v√°rios request em simult√¢neo. Utilizar os ficheiros `.bat`.
