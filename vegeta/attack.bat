@@ -1,6 +1,6 @@
 @echo off
 
-set duration = "3s"
+set duration = "30s"
 set rate = 100
 
 echo ####################### STATUS CODE 200 #######################
