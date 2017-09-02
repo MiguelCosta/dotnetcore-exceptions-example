@@ -1,4 +1,4 @@
-﻿namespace Mpc.Exceptions.Example.NoExceptions.Api
+﻿namespace Mpc.ExceptionsExample.NoExceptions.Api
 {
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;

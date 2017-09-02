@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mpc.ExceptionsExample.WithExceptions.Api", "Mpc.ExceptionsExample.WithExceptions.Api\Mpc.ExceptionsExample.WithExceptions.Api.csproj", "{5433F12F-BE03-4325-91FD-4DB5CFA8FBD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mpc.ExceptionsExample.WithExceptions.Api", "Mpc.ExceptionsExample.WithExceptions.Api\Mpc.ExceptionsExample.WithExceptions.Api.csproj", "{5433F12F-BE03-4325-91FD-4DB5CFA8FBD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mpc.ExceptionsExample.WithExceptions.Service", "Mpc.ExceptionsExample.WithExceptions.Service\Mpc.ExceptionsExample.WithExceptions.Service.csproj", "{89DEFF7F-309B-417E-A78A-FEF94FE5D54E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mpc.ExceptionsExample.WithExceptions.Service", "Mpc.ExceptionsExample.WithExceptions.Service\Mpc.ExceptionsExample.WithExceptions.Service.csproj", "{89DEFF7F-309B-417E-A78A-FEF94FE5D54E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mpc.ExceptionsExample.NoExceptions.Services", "Mpc.ExceptionsExample.NoExceptions.Services\Mpc.ExceptionsExample.NoExceptions.Services.csproj", "{83C4DC79-39ED-4E51-A656-E11C56371CD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mpc.ExceptionsExample.NoExceptions.Services", "Mpc.ExceptionsExample.NoExceptions.Services\Mpc.ExceptionsExample.NoExceptions.Services.csproj", "{83C4DC79-39ED-4E51-A656-E11C56371CD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mpc.Exceptions.Example.NoExceptions.Api", "Mpc.Exceptions.Example.NoExceptions.Api\Mpc.Exceptions.Example.NoExceptions.Api.csproj", "{04DD84B0-53E4-407B-BE11-299820ECEF26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mpc.ExceptionsExample.NoExceptions.Api", "Mpc.Exceptions.Example.NoExceptions.Api\Mpc.ExceptionsExample.NoExceptions.Api.csproj", "{04DD84B0-53E4-407B-BE11-299820ECEF26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B4D26C-4F0B-42C0-B20D-B25D19E1FBAC}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

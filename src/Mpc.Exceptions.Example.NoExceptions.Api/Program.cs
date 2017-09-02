@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace Mpc.Exceptions.Example.NoExceptions.Api
+namespace Mpc.ExceptionsExample.NoExceptions.Api
 {
     public class Program
     {

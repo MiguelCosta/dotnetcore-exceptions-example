@@ -1,4 +1,4 @@
-﻿namespace Mpc.Exceptions.Example.NoExceptions.Api.Controllers
+﻿namespace Mpc.ExceptionsExample.NoExceptions.Api.Controllers
 {
     using System.Collections.Generic;
     using Microsoft.AspNetCore.Mvc;
